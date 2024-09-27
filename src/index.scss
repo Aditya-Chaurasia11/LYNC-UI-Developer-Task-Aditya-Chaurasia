@@ -1,0 +1,208 @@
+body {
+  background-color: #020617;
+}
+
+// Define global breakpoints for media queries
+$breakpoint-mobile: 680px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1024px;
+
+// Custom heading class
+.heading1 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 108px;
+  text-align: center;
+  font-family: "Satoshi-Black", sans-serif;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 60px;
+    line-height: 92.08px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 38px;
+    line-height: 51.3px;
+  }
+}
+
+.heading2 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 64.8px;
+  text-align: center;
+  color: white;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 32px;
+    line-height: 43.2px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+}
+
+.heading3 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  line-height: 32.4px;
+  text-align: left;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 17px;
+    line-height: 21.6px;
+  }
+}
+
+.para1 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 24px;
+  // margin-top: 10px;
+  font-weight: 600;
+  line-height: 32.4px;
+  text-align: center;
+  // width: 60%;
+  margin: 0 auto;
+  color: #daddd8;
+
+  @media (max-width: $breakpoint-tablet) {
+    //styleName: Heading/Heading 5/Heading 5 Bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.3px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.9px;
+  }
+}
+
+.para2 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43.4px;
+  text-align: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 24px;
+    line-height: 32.3px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 18px;
+    line-height: 18.9px;
+    padding: 0 10px;
+  }
+}
+
+.para3 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 21.6px;
+  text-align: left;
+  color: #8d96b2;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 10px;
+    line-height: 13.5px;
+  }
+}
+
+.redSpan {
+  background: linear-gradient(94.68deg, #ff0276 2.51%, #7209b7 56.42%);
+  font-family: "Satoshi-Black", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blueSpan {
+  color: #4152d0;
+  background: linear-gradient(205.14deg, #3f37c9 30.04%, #4cc9f0 186.57%);
+  font-family: "Satoshi-Black", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  border: 1px solid #494261;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.carousel-btn:disabled {
+  cursor: not-allowed;
+}
+
+.player1 {
+  width: 207.64px; // Default size
+  height: 207.64px;
+  transform: rotate(-15deg);
+
+  @media (max-width: $breakpoint-tablet) {
+    // Laptop and Tablets
+    width: 254.53px;
+    height: 254.53px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    // Mobile
+    width: 140px; // Adjust size for mobile
+    height: 140px;
+  }
+}
+
+/* OTF Font */
+@font-face {
+  font-family: "Satoshi-BlackB";
+  src: url("./Fonts//OTF/Satoshi-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Web Fonts (WOFF/WOFF2) */
+@font-face {
+  font-family: "MyFontWeb";
+  src: url("./fonts/web/myfont.woff2") format("woff2"),
+    url("./fonts/web/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Variable Font */
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("./Fonts/Variable/Satoshi-Variable.ttf") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}

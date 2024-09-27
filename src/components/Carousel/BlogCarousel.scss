@@ -1,0 +1,89 @@
+@import "../../index.scss";
+
+.blog_carousel-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  max-width: 1192.62px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.blog_carousel-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 80%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.blog_carousel-slide {
+  width: 304px;
+  background-color: #1a1339;
+  backdrop-filter: blur(300px);
+  border-radius: 20px;
+  // margin: 0 10px;
+  backdrop-filter: blur(300px);
+}
+
+.blog_carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+// .carousel-btn {
+//   background-color: transparent;
+
+//   border: 1px solid #494261;
+//   border-radius: 50%;
+//   /* color: white; */
+//   width: 48px;
+//   height: 48px;
+//   padding: 10px;
+//   cursor: pointer;
+//   /* border: none; */
+// }
+
+.carousel-btn:disabled {
+  /* background-color: #888; */
+  cursor: not-allowed;
+}
+
+.blog_carousel_data {
+  padding: 10px 15px;
+  padding-bottom: 15px;
+}
+
+.blog_carousel_data h3 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+  color: white;
+}
+
+.blog_carousel_data p {
+  color: #8d96b2;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 18.9px;
+  text-align: left;
+}
+
+.blog_carousel_button {
+  background-color: white;
+  padding: 12px 14px;
+  border: none;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13.5px;
+  text-align: left;
+  margin-top: 15px;
+  border-radius: 12px;
+}

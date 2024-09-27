@@ -1,0 +1,134 @@
+/* Carousel.css */
+.review_carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1192.62px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.review_carousel-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 80%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review_carousel-slide {
+  width: 304px;
+  /* backdrop-filter: blur(300px); */
+  // margin: 0 10px;
+  /* backdrop-filter: blur(300px); */
+}
+
+.reviewData_reviews {
+  border-radius: 20px 20px 0 0;
+  background: #05061c;
+  padding: 16px 20px;
+}
+
+.reviewData_reviews p {
+  font-family: "Satoshi-Black", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.review_carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+// .carousel-btn {
+//   background-color: transparent;
+//   border: 1px solid #494261;
+//   border-radius: 50%;
+//   /* color: white; */
+//   width: 48px;
+//   height: 48px;
+//   padding: 10px;
+//   cursor: pointer;
+//   /* border: none; */
+// }
+
+.carousel-btn:disabled {
+  /* background-color: #888; */
+  cursor: not-allowed;
+}
+
+.review_carousel_data {
+  padding: 10px 15px;
+  padding-bottom: 15px;
+}
+
+.review_carousel_data h3 {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+  color: white;
+}
+
+.review_carousel_data p {
+  color: #8d96b2;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 15px;
+  line-height: 18.9px;
+  text-align: left;
+}
+
+.review_carousel_button {
+  background-color: white;
+  padding: 12px 14px;
+  border: none;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13.5px;
+  text-align: left;
+  margin-top: 15px;
+  border-radius: 12px;
+}
+
+.reviewData_profile {
+  background-color: #20163f;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border-radius: 0 0 20px 20px;
+}
+
+.reviewData_profile_img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.reviewData_profile_name h2 {
+  color: white;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.reviewData_profile_name p {
+  font-family: "Satoshi-Black", sans-serif;
+  color: #8d96b2;
+  font-size: 6px;
+  font-weight: 700;
+  line-height: 7.5px;
+  letter-spacing: 0.2em;
+  text-align: left;
+}
