@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./reviewCarousel.scss";
+import "./ReviewCarousel.scss";
 import reviewData from "../../data/reviewData";
 
 const ReviewCarousel = () => {
