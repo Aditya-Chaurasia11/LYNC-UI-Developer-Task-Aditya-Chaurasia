@@ -46,7 +46,7 @@ const Home = () => {
               keeping blockchain complexities aside with WebWorld SDKs!
             </p>
             <div className="home_launch_your_game_button_container">
-              <button className="home_launch_your_game_button1">
+              <button className="home_launch_your_game_button1 blueBgButton">
                 Get Started{" "}
                 <svg
                   width="25"
@@ -425,7 +425,7 @@ const Home = () => {
             <h2 className="heading2">
               Strongest Web3 <br /> <span className="blueSpan">Community</span>
             </h2>
-            <button>
+            <button className="blueBgButton">
               <img src={Telegram} /> Join Telegram
             </button>
           </div>

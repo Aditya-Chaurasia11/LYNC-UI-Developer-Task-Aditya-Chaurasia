@@ -143,6 +143,38 @@ $breakpoint-desktop: 1024px;
   -webkit-text-fill-color: transparent;
 }
 
+.blueBgButton {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  letter-spacing: 0.25px;
+  font-family: "Satoshi-Black", sans-serif;
+  background: linear-gradient(205.14deg, #3f37c9 30.04%, #4cc9f0 186.57%);
+}
+
+.whiteBgButton {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  // width: 131px;
+  // height: 40px;
+  color: black;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 14px;
+  letter-spacing: 0.25px;
+  font-family: "Satoshi-Black", sans-serif;
+  background: #ffffff;
+}
+
 .carousel-btn {
   background-color: transparent;
   border: 1px solid #494261;
