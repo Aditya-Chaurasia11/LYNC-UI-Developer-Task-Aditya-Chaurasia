@@ -90,6 +90,10 @@ nav {
   /* justify-content: center; */
 }
 
+.nav-close-btn{
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     display: block;
@@ -113,12 +117,13 @@ nav {
 
   header .responsive_nav {
     // padding: 200px;
-    min-height:50vh;
+    min-height: 50vh;
     transform: translateY(100vh);
     border-radius: 20px;
   }
 
   nav .nav-close-btn {
+    display: block;
     color: #8d96b2;
   }
 

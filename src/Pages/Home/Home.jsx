@@ -19,6 +19,15 @@ import ReviewCarousel from "../../components/Carousel/ReviewCarousel";
 import JoinDiscord from "../../assets/join_discord.svg";
 import Telegram from "../../assets/telegram_logo.svg";
 
+import Ethereum from "../../assets/favouriteChain/image 69.png";
+import Polygon from "../../assets/favouriteChain/image 93.png";
+import Aptos from "../../assets/favouriteChain/image 92.png";
+import Zksyn from "../../assets/favouriteChain/image 55.png";
+import Shardeum from "../../assets/favouriteChain/Shardeum Logo Light 2.png";
+import Astar from "../../assets/favouriteChain/image 66.png";
+import Saga from "../../assets/favouriteChain/image 72.png";
+import Avalanche from "../../assets/favouriteChain/Avalanche_Horizontal_White 2.png";
+
 import filecoin from "../../assets/Group 258.png";
 import chainlink from "../../assets/Group 259.png";
 import spheron from "../../assets/Group 265.png";
@@ -79,14 +88,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="home_backedby_container">
+        <div className="home_backedby_container">
           <h2>Backed by</h2>
           <div className="home_backedby_brands_container">
             <img src={BackedByImg1}></img>
             <img src={BackedByImg2}></img>
             <img src={BackedByImg3}></img>
           </div>
-        </div> */}
+        </div>
 
         <div className="home_lync_provides_container">
           <div className="home_lync_provides">
@@ -205,9 +214,10 @@ const Home = () => {
               and Unreal Engine in a few clicks.
             </p>
           </div>
-          {/* <div className="home_powerup_lower">
-            <h2>
-              Don't Worry about the <span>Web3</span> Complexities
+          <div className="home_powerup_lower">
+            <h2 className="heading2">
+              Don't Worry about the <span className="redSpan">Web3</span>{" "}
+              Complexities
             </h2>
             <div className="home_powerup_lower_list">
               <p>
@@ -328,7 +338,7 @@ const Home = () => {
               </p>
               <img src={ETHAnimation} className="home_powerup_lower_img"></img>
             </div>
-          </div> */}
+          </div>
 
           <div className="home_elevateGrid_container">
             <div className="home_elevateGrid_left">
@@ -392,6 +402,26 @@ const Home = () => {
             {productData?.map((data, index) => (
               <ProductCard data={data} index={index} />
             ))}
+          </div>
+        </div>
+
+        <div className="home_favourite_container">
+          <h2 className="heading2">
+            With LYNC, build on your
+            <br />
+            <span className="blueSpan">favorite chain.</span>
+          </h2>
+          <div className="home_favourite_img_container">
+            <img src={Ethereum}></img>
+            <img src={Polygon}></img>
+            <img src={Aptos}></img>
+            <img src={Zksyn}></img>
+          </div>
+          <div className="home_favourite_img_container">
+            <img src={Shardeum}></img>
+            <img src={Astar}></img>
+            <img src={Saga}></img>
+            <img src={Avalanche}></img>
           </div>
         </div>
 
