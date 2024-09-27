@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
-import "./HomeLayout.css";
+import "./HomeLayout.scss";
 import Footer from "../components/Footer/Footer";
 
 const HomeLayout = ({ children }) => {
