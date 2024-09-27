@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.scss";
+import "./Home.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 import NavbarBG from "../../assets/Background.svg";
 import BackedByImg1 from "../../assets/LongHashX White 1.svg";
