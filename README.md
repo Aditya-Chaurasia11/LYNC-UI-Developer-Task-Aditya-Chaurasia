@@ -57,6 +57,7 @@ npm run dev
 ### Contact
 1. **Your GitHub Username**: Aditya-Chaurasia11
 2. **Email Address**: 1212aditya11@gmail.com
+3. **Resume** : https://drive.google.com/file/d/1TJJ-T-GYjAAe6lbjNhKKSc4h_H1UL9Fz/view?usp=drive_link
 
 ### Additional Notes
 - Feel free to adjust any of the points based on your specific approach or any additional requirements that may arise during your development process. If you need any further modifications or specific content, just let me know!
