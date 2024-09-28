@@ -21,6 +21,12 @@ View the live version of the project: [https://lync-ui-developer-task-aditya-cha
 - Performance optimizations like lazy loading and image optimization
 
 
+
+
+
+
+
+
 ## Technologies Used
 
 - **ReactJS** for building UI components
@@ -44,6 +50,8 @@ npm run dev
 ```
 
 
+## Challenges
+- **Image width & height ratio**: There is a component named section 1 in figma contain  border with some curve and i am not able to write its border code and then i am go for its figma img but it still it was hard to maintain its ratio of height and width (to show same as img  originally was)  beacuse of responsiveness and hence i am not able to improve it sorry for that, but i just add normal border.
 
 
 ### Contact
