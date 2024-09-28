@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./Home.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 import NavbarBG from "../../assets/Background.svg";
@@ -36,11 +36,18 @@ import {
 } from "../../images/Images";
 
 import ProductCard from "../../components/Card/ProductCard";
-import BlogCarousel from "../../components/Carousel/BlogCarousel";
-import ReviewCarousel from "../../components/Carousel/ReviewCarousel";
+
+const BlogCarousel = React.lazy(() =>
+  import("../../components/Carousel/BlogCarousel")
+);
+const ReviewCarousel = React.lazy(() =>
+  import("../../components/Carousel/ReviewCarousel")
+);
 
 import HomeLayout from "../../Layout/HomeLayout";
 import productData from "../../data/productData";
+
+const Loader = () => <div>Loading...</div>;
 
 const Home = () => {
   return (
@@ -193,15 +200,15 @@ const Home = () => {
             </h2>
           </div>
           <div className="home_making_blockchain_brands">
-            <img src={MakingImg1}></img>
+            <img src={MakingImg1} loading="lazy"></img>
 
-            <img src={MakingImg2}></img>
+            <img src={MakingImg2} loading="lazy"></img>
 
-            <img src={MakingImg3}></img>
+            <img src={MakingImg3} loading="lazy"></img>
 
-            <img src={MakingImg4}></img>
+            <img src={MakingImg4} loading="lazy"></img>
 
-            <img src={MakingImg5}></img>
+            <img src={MakingImg5} loading="lazy"></img>
           </div>
         </div>
 
@@ -339,7 +346,11 @@ const Home = () => {
                 </svg>
                 Go Cross-Chain in a few clicks
               </p>
-              <img src={ETHAnimation} className="home_powerup_lower_img"></img>
+              <img
+                src={ETHAnimation}
+                className="home_powerup_lower_img"
+                loading="lazy"
+              ></img>
             </div>
           </div>
 
@@ -415,16 +426,16 @@ const Home = () => {
             <span className="blueSpan">favorite chain.</span>
           </h2>
           <div className="home_favourite_img_container">
-            <img src={Ethereum}></img>
-            <img src={Polygon}></img>
-            <img src={Aptos}></img>
-            <img src={Zksyn}></img>
+            <img src={Ethereum} loading="lazy"></img>
+            <img src={Polygon} loading="lazy"></img>
+            <img src={Aptos} loading="lazy"></img>
+            <img src={Zksyn} loading="lazy"></img>
           </div>
           <div className="home_favourite_img_container">
-            <img src={Shardeum}></img>
-            <img src={Astar}></img>
-            <img src={Saga}></img>
-            <img src={Avalanche}></img>
+            <img src={Shardeum} loading="lazy"></img>
+            <img src={Astar} loading="lazy"></img>
+            <img src={Saga} loading="lazy"></img>
+            <img src={Avalanche} loading="lazy"></img>
           </div>
         </div>
 
@@ -439,7 +450,9 @@ const Home = () => {
             </p>
           </div>
           <div className="home_blog_carousel">
-            <BlogCarousel />
+            <Suspense fallback={<Loader />}>
+              <BlogCarousel />
+            </Suspense>
           </div>
         </div>
 
@@ -448,18 +461,20 @@ const Home = () => {
             Valuable <span className="redSpan">Reviews</span>{" "}
           </h2>
           <div className="home_review_carousel">
-            <ReviewCarousel />
+            <Suspense fallback={<Loader />}>
+              <ReviewCarousel />
+            </Suspense>
           </div>
         </div>
 
         <div className="home_joindiscord_container">
-          <img src={JoinDiscord} className="discordImg"></img>
+          <img src={JoinDiscord} className="discordImg" loading="lazy"></img>
           <div className="home_joindiscord_text">
             <h2 className="heading2">
               Strongest Web3 <br /> <span className="blueSpan">Community</span>
             </h2>
             <button className="blueBgButton">
-              <img src={Telegram} /> Join Telegram
+              <img src={Telegram} loading="lazy" /> Join Telegram
             </button>
           </div>
         </div>
@@ -469,14 +484,14 @@ const Home = () => {
             Our <span className="blueSpan">Believers and Partners</span>
           </h2>
           <div className="home_believers_img_container">
-            <img src={filecoin}></img>
-            <img src={chainlink}></img>
-            <img src={spheron}></img>
-            <img src={longhash}></img>
-            <img src={axelar}></img>
-            <img src={biconomy}></img>
-            <img src={lighthouse}></img>
-            <img src={believers_img}></img>
+            <img src={filecoin} loading="lazy"></img>
+            <img src={chainlink} loading="lazy"></img>
+            <img src={spheron} loading="lazy"></img>
+            <img src={longhash} loading="lazy"></img>
+            <img src={axelar} loading="lazy"></img>
+            <img src={biconomy} loading="lazy"></img>
+            <img src={lighthouse} loading="lazy"></img>
+            <img src={believers_img} loading="lazy"></img>
           </div>
         </div>
       </div>
