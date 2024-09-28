@@ -65,6 +65,12 @@
   justify-content: space-between;
   width: 148px;
   height: 40px;
+  transition: width 0.3s ease;
+
+}
+
+.footer_upper button:hover {
+  width: 138px; 
 }
 
 .footer_lower {

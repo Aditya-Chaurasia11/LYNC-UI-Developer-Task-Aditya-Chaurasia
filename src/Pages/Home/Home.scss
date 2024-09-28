@@ -90,6 +90,13 @@
   color: white;
 }
 
+.home_launch_your_game_button1 {
+  transition: width 0.3s ease;
+}
+.home_launch_your_game_button1:hover {
+  width: 145px; 
+}
+
 .home_launch_your_game_button2 {
   background: transparent;
 }

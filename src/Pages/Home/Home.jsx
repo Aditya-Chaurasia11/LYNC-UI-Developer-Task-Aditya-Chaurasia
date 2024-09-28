@@ -2,40 +2,43 @@ import React from "react";
 import "./Home.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 import NavbarBG from "../../assets/Background.svg";
-import BackedByImg1 from "../../assets/LongHashX White 1.svg";
-import BackedByImg2 from "../../assets/Axelar Logo Full White 1.svg";
-import BackedByImg3 from "../../assets/image 39.svg";
-import MakingImg1 from "../../assets/image 88.svg";
-import MakingImg2 from "../../assets/image 89.svg";
-import MakingImg3 from "../../assets/SOM_Website_Logo (1) 1.svg";
-import MakingImg4 from "../../assets/image 90.svg";
-import MakingImg5 from "../../assets/image 87.svg";
-import ETHAnimation from "../../assets/Eth animation.svg";
-import animation1 from "../../assets/animation/Animation - 1727263493217.json";
-import animation2 from "../../assets/animation/Animation - 1727273545828.json";
+
+import {
+  BackedByImg1,
+  BackedByImg2,
+  BackedByImg3,
+  MakingImg1,
+  MakingImg2,
+  MakingImg3,
+  MakingImg4,
+  MakingImg5,
+  ETHAnimation,
+  animation1,
+  animation2,
+  JoinDiscord,
+  Telegram,
+  Ethereum,
+  Polygon,
+  Aptos,
+  Zksyn,
+  Shardeum,
+  Astar,
+  Saga,
+  Avalanche,
+  filecoin,
+  chainlink,
+  spheron,
+  longhash,
+  axelar,
+  biconomy,
+  lighthouse,
+  believers_img,
+} from "../../images/Images";
+
 import ProductCard from "../../components/Card/ProductCard";
 import BlogCarousel from "../../components/Carousel/BlogCarousel";
 import ReviewCarousel from "../../components/Carousel/ReviewCarousel";
-import JoinDiscord from "../../assets/join_discord.svg";
-import Telegram from "../../assets/telegram_logo.svg";
 
-import Ethereum from "../../assets/favouriteChain/image 69.png";
-import Polygon from "../../assets/favouriteChain/image 93.png";
-import Aptos from "../../assets/favouriteChain/image 92.png";
-import Zksyn from "../../assets/favouriteChain/image 55.png";
-import Shardeum from "../../assets/favouriteChain/Shardeum Logo Light 2.png";
-import Astar from "../../assets/favouriteChain/image 66.png";
-import Saga from "../../assets/favouriteChain/image 72.png";
-import Avalanche from "../../assets/favouriteChain/Avalanche_Horizontal_White 2.png";
-
-import filecoin from "../../assets/Group 258.png";
-import chainlink from "../../assets/Group 259.png";
-import spheron from "../../assets/Group 265.png";
-import longhash from "../../assets/Group 260.png";
-import axelar from "../../assets/Group 261.png";
-import biconomy from "../../assets/Group 262.png";
-import lighthouse from "../../assets/Group 263.png";
-import believers_img from "../../assets/Group 264.png";
 import HomeLayout from "../../Layout/HomeLayout";
 import productData from "../../data/productData";
 

@@ -14,7 +14,7 @@ const Footer = () => {
           <br />
           Let's make it big together !!!
         </h2>
-        <button className="blueBgButton">
+        <button className="blueBgButton ">
           Get Started{" "}
           <svg
             width="25"
