@@ -11,7 +11,7 @@ This project is a responsive and pixel-perfect implementation of the LYNC World 
 
 ## Demo
 
-View the live version of the project: [https://lync-ui-developer-task-aditya-chaurasia.vercel.app/]()  
+View the live version of the project: https://lync-ui-developer-task-aditya-chaurasia.vercel.app/
 
 ## Features
 
